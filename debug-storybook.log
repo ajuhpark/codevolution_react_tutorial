@@ -1,0 +1,11 @@
+[22:29:26.688] [INFO] [36mInitializing Storybook[39m
+[22:29:27.228] [DEBUG] Getting package.json info for /Users/andrewpark/Github Repositories/codevolution_react_tutorial/package.json...
+[22:29:27.228] [INFO] Package manager: npm
+[22:29:27.234] [ERROR] [38;2;241;97;97mError: ENOENT: no such file or directory, open './package.json'[39m
+    at readFileSync (node:fs:443:20)
+    at _JsPackageManager.getPackageJson (file:///Users/andrewpark/.npm/_npx/7104d867d8b76a75/node_modules/storybook/dist/_node-chunks/chunk-LEFX2TGG.js:14145:23)
+    at get packageJson (file:///Users/andrewpark/.npm/_npx/7104d867d8b76a75/node_modules/storybook/dist/_node-chunks/chunk-LEFX2TGG.js:14509:34)
+    at PreflightCheckCommand.checkPackageNameConflict (file:///Users/andrewpark/.npm/_npx/7104d867d8b76a75/node_modules/create-storybook/dist/_node-chunks/chunk-XZDMQSTU.js:669:39)
+    at PreflightCheckCommand.execute (file:///Users/andrewpark/.npm/_npx/7104d867d8b76a75/node_modules/create-storybook/dist/_node-chunks/chunk-XZDMQSTU.js:648:14)
+[22:29:36.469] [PROMPT] Would you like to send anonymous crash reports to improve Storybook and fix bugs faster? {"choice":true}
+[22:29:36.471] [INFO] Storybook collects completely anonymous usage telemetry. We use it to shape Storybook's roadmap and prioritize features. You can learn more, including how to opt out, at https://storybook.js.org/telemetry
