@@ -1,15 +1,15 @@
 import React from 'react'
-import { Primary } from '../Button/Button.stories'
 import { Large } from '../Input/Input.stories'
+import Button from '../Button/Button'
 
-
-export default { 
+const meta = { 
     title: 'form/Subscription'
 }
+export default meta
 
 export const PrimarySubscription = () => (
     <>
         <Large />
-        <Primary />
+        <Button variant='primary'>Primary</Button>
     </>
 )
