@@ -9,6 +9,12 @@ import React from 'react'
 import { ChakraProvider, defaultSystem } from '@chakra-ui/react'
 
 const preview = {
+  // The current (Storybook 8+) way to turn on autodocs project-wide: a
+  // 'autodocs' tag here applies to every story that doesn't opt out, and
+  // Storybook generates a Docs page for any component with at least one
+  // tagged story. (The old `docs: { autodocs: true }` option in main.js
+  // no longer does anything in this version -- that was the pre-8 API.)
+  tags: ['autodocs'],
   // Global decorator: wraps EVERY story in the project with ChakraProvider,
   // since any story using a Chakra component needs that provider's context
   // available somewhere above it in the tree.
