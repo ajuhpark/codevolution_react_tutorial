@@ -1,22 +1,17 @@
-[12:08:18.194] [INFO] storybook v10.5.7
-[12:08:20.298] [DEBUG] Getting package.json info for /Users/andrewpark/Github Repositories/codevolution_react_storybook_tutorial/package.json...
-[12:08:22.021] [WARN] No story files found for the specified pattern: [34msrc/**/*.mdx[39m
-[12:08:22.285] [DEBUG] Serving static files from [36mpublic[39m at [36m/[39m
-[12:08:22.287] [INFO] Starting...
-[12:08:22.682] [DEBUG] Starting preview..
-[12:08:22.713] [INFO] Loading Webpack configuration from `node_modules/react-scripts`
-[12:08:22.713] [INFO] Removing existing JavaScript and TypeScript rules.
-[12:08:24.796] [INFO] Modifying Create React App rules.
-[12:08:24.819] [INFO] Addon-docs: using MDX3
-[12:08:24.916] [INFO] Using default Webpack5 setup
-[12:08:35.801] [WARN] [eslint] 
-src/components/ChakraButton/ChakraButton.stories.js
-  [1mLine 4:1:[22m  Assign object to a variable before exporting as module default  [33m[4mimport/no-anonymous-default-export[24m[39m
-
-
-[12:08:35.803] [ERROR] Failed to build the preview
-[12:08:35.818] [WARN] Force closed preview build
-[12:08:35.828] [ERROR] [38;2;241;97;97mSB_BUILDER-WEBPACK5_0003 (WebpackCompilationError): There were problems when compiling your code with Webpack.
+[11:17:15.813] [INFO] storybook v10.5.7
+[11:17:18.179] [DEBUG] Getting package.json info for /Users/andrewpark/Github Repositories/codevolution_react_storybook_tutorial/package.json...
+[11:17:20.083] [WARN] No story files found for the specified pattern: [34msrc/**/*.mdx[39m
+[11:17:20.192] [DEBUG] Serving static files from [36mpublic[39m at [36m/[39m
+[11:17:20.196] [INFO] Starting...
+[11:17:20.422] [DEBUG] Starting preview..
+[11:17:20.440] [INFO] Loading Webpack configuration from `node_modules/react-scripts`
+[11:17:20.440] [INFO] Removing existing JavaScript and TypeScript rules.
+[11:17:22.063] [INFO] Modifying Create React App rules.
+[11:17:22.132] [INFO] Addon-docs: using MDX3
+[11:17:22.205] [INFO] Using default Webpack5 setup
+[11:17:35.023] [ERROR] Failed to build the preview
+[11:17:35.039] [WARN] Force closed preview build
+[11:17:35.042] [ERROR] [38;2;241;97;97mSB_BUILDER-WEBPACK5_0003 (WebpackCompilationError): There were problems when compiling your code with Webpack.
 Run Storybook with --debug-webpack for more information.[39m
     at starter (file:///Users/andrewpark/Github%20Repositories/codevolution_react_storybook_tutorial/node_modules/@storybook/builder-webpack5/dist/index.js:857:11)
     at starter.next (<anonymous>)
@@ -28,5 +23,5 @@ Run Storybook with --debug-webpack for more information.[39m
     at async withTelemetry (file:///Users/andrewpark/Github%20Repositories/codevolution_react_storybook_tutorial/node_modules/storybook/dist/_node-chunks/chunk-XYZ5NBEV.js:1785:12)
     at async dev (file:///Users/andrewpark/Github%20Repositories/codevolution_react_storybook_tutorial/node_modules/storybook/dist/bin/core.js:3850:3)
     at async _Command.<anonymous> (file:///Users/andrewpark/Github%20Repositories/codevolution_react_storybook_tutorial/node_modules/storybook/dist/bin/core.js:3958:3)
-[12:08:35.832] [WARN] Broken build, fix the error above.
+[11:17:35.055] [WARN] Broken build, fix the error above.
 You may need to refresh the browser.
