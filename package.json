@@ -44,7 +44,6 @@
   "devDependencies": {
     "@storybook/addon-a11y": "^10.5.7",
     "@storybook/addon-docs": "^10.5.7",
-    "@storybook/addon-onboarding": "^10.5.7",
     "@storybook/preset-create-react-app": "^10.5.7",
     "@storybook/react-webpack5": "^10.5.7",
     "eslint-plugin-storybook": "^10.5.7",
