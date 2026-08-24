@@ -68,3 +68,37 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Storybook
+
+### `yarn storybook`
+
+Runs Storybook's dev server locally at [http://localhost:6006](http://localhost:6006) so you can browse and edit components while they hot-reload.
+
+### `yarn build-storybook`
+
+Builds a static, standalone version of Storybook (no dev server required to view it) into the `storybook-static` folder.
+
+### `yarn deploy-storybook`
+
+Pushes the contents of `storybook-static` to the `gh-pages` branch on GitHub, publishing it to [https://ajuhpark.github.io/codevolution_react_tutorial/](https://ajuhpark.github.io/codevolution_react_tutorial/). Run `yarn build-storybook` first to make sure the static folder is up to date before deploying.
+
+### Keeping build output out of `main`
+
+`yarn build` and `yarn build-storybook` write to the `build/` and `storybook-static/` folders respectively. Neither should be committed to the `main` branch (the `storybook-static` content is meant to live only on the `gh-pages` branch, pushed there by `yarn deploy-storybook`). To stop them from being accidentally committed:
+
+1. Open `.gitignore` in the project root.
+2. Add these two lines (on their own lines, anywhere in the file):
+   ```
+   /build
+   /storybook-static
+   ```
+3. Save the file. If either folder was already tracked by git before adding these lines, untrack it without deleting it from disk:
+   ```
+   git rm -r --cached build storybook-static
+   ```
+4. Commit the updated `.gitignore` (and the untracking, if step 3 was needed):
+   ```
+   git add .gitignore
+   git commit -m "Ignore build and storybook-static output folders"
+   ```
